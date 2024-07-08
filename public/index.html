@@ -95,30 +95,373 @@
         </nav>
       </div>
     </header>
+
     <!--Hero Section-->
-    <section class="h-128 group relative">
+    <section class="h-64 md:h-128 lg:h-128 group relative">
       <!--Hero Image-->
-      <img src="./images/batman.jpg" alt="main-image" class="h-full w-full object-cover" />
+      <img
+        src="./images/batman.jpg"
+        alt="main-image"
+        class="h-full w-full object-cover"
+      />
 
       <!--Hero Content-->
-      <div class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black">
+      <div
+        class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black"
+      >
         <!--Hero Content Container-->
-        <div class="container">
-          <h3 class="text-yellow-400 tracking-wider group-hover:mb-1 duration-500">
+        <div class="container pl-10 lg:pl-0">
+          <h3
+            class="text-yellow-400 tracking-wider group-hover:mb-1 duration-500"
+          >
             Action, Drama, Thriller
           </h3>
-          <h1 class="text-6xl text-gray-200 group-hover:mb-1 duration-500">The Dark Knight</h1>
-          <p class="text-gray-200 group-hover:mb-2 duration-500 w-2/3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, deserunt! Facere aut neque dolores dolore ipsam eum error cupiditate fuga.</p>
-        
-            <!--Detail Container-->
-            <div class="flex space-x-8 opacity-0 group-hower:opacity-100 group-hower:mb-20 duration-1000"></div>
+          <h1
+            class="text-4xl lg:text-6xl text-gray-200 group-hover:mb-1 duration-500"
+          >
+            The Dark Knight
+          </h1>
+          <p
+            class="text-gray-200 group-hover:mb-2 duration-500 text-sm lg:text-base w-3/4 lg:w-2/3"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+            deserunt! Facere aut neque dolores dolore ipsam eum error cupiditate
+            fuga.
+          </p>
+
+          <!--Detail Container-->
+          <div
+            class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20 duration-1000"
+          >
             <!--Watch-->
-            <div class="felx space-x-2 items-center cursor-pointer">
-              <a href="/" class="text-gray-200 uppercase text-lg hover:text-rose-600 duration-500">Watch Thriller</a>
-              <a href="/" class="text-gray-200 uppercase text-lg hover:text-rose-600 duration-500"></a>
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                href="/"
+                class="text-gray-200 uppercase lg:text-lg hover:text-rose-600 duration-500"
+                >Watch Thriller</a
+              >
+              <div
+                class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-rose-600 text-gray-200"
+              >
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+
+            <!--Info-->
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                href="/"
+                class="text-gray-200 uppercase lg:text-lg hover:text-rose-600 duration-500"
+                >Full Synopsis</a
+              >
+              <div
+                class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-rose-600 text-gray-200"
+              >
+                <i class="fas fa-arrow-right"></i>
+              </div>
             </div>
           </div>
+        </div>
       </div>
+      <!--Points-->
+      <div
+        class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000"
+      >
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-rose-600"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gray-400"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gray-400"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gray-400"></div>
+      </div>
+    </section>
+
+    <!--Movies Section-->
+    <section class="py-20 bg-black">
+      <!--Movies Content-->
+      <div class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0">
+        <!--Left Content-->
+        <div class="basis-2/3">
+          <!--Titles-->
+          <div
+            class="flex space-x-2 divide-x divide-rose-600 divide-opacity-50 mb-8 pl-10 lg:pl-0"
+          >
+            <h2 class="text-rose-600"><a href="/">Latest</a></h2>
+            <h2 class="text-gray-200 pl-2 hover:text-rose-600 duration-500">
+              <a href="/">Popular</a>
+            </h2>
+            <h2 class="text-gray-200 pl-2 hover:text-rose-600 duration-500">
+              <a href="/">Best</a>
+            </h2>
+          </div>
+          <!--Images Container-->
+          <div class="flex flex-wrap">
+            <!--Image 1-->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-2/1 lg:basis-1/3">
+              <!--img-->
+              <img
+                src="./images/mv1.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <!--Image Detail Container-->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 duration-500"
+                >
+                  Oblivion
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gray-200"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, quae?
+                </p>
+                <!--Icons Container-->
+                <div
+                  class="absolute flex space-x-8 text-gray-200 opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a href="/"
+                    ><i class="fa-solid fa-play hover:text-rose-600"></i
+                  ></a>
+                  <a href="/"
+                    ><i class="fa-solid fa-arrow-right hover:text-rose-600"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!--Image 2-->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-2/1 lg:basis-1/3">
+              <!--img-->
+              <img
+                src="./images/mv2.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <!--Image Detail Container-->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 duration-500"
+                >
+                  Oblivion
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gray-200"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, quae?
+                </p>
+                <!--Icons Container-->
+                <div
+                  class="absolute flex space-x-8 text-gray-200 opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a href="/"
+                    ><i class="fa-solid fa-play hover:text-rose-600"></i
+                  ></a>
+                  <a href="/"
+                    ><i class="fa-solid fa-arrow-right hover:text-rose-600"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!--Image 3-->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-2/1 lg:basis-1/3">
+              <!--img-->
+              <img
+                src="./images/mv3.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <!--Image Detail Container-->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 duration-500"
+                >
+                  Oblivion
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gray-200"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, quae?
+                </p>
+                <!--Icons Container-->
+                <div
+                  class="absolute flex space-x-8 text-gray-200 opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a href="/"
+                    ><i class="fa-solid fa-play hover:text-rose-600"></i
+                  ></a>
+                  <a href="/"
+                    ><i class="fa-solid fa-arrow-right hover:text-rose-600"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!--Image 4-->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-2/1 lg:basis-1/3">
+              <!--img-->
+              <img
+                src="./images/mv4.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <!--Image Detail Container-->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 duration-500"
+                >
+                  Oblivion
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gray-200"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, quae?
+                </p>
+                <!--Icons Container-->
+                <div
+                  class="absolute flex space-x-8 text-gray-200 opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a href="/"
+                    ><i class="fa-solid fa-play hover:text-rose-600"></i
+                  ></a>
+                  <a href="/"
+                    ><i class="fa-solid fa-arrow-right hover:text-rose-600"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!--Image 5-->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-2/1 lg:basis-1/3">
+              <!--img-->
+              <img
+                src="./images/mv5.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <!--Image Detail Container-->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 duration-500"
+                >
+                  Oblivion
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gray-200"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, quae?
+                </p>
+                <!--Icons Container-->
+                <div
+                  class="absolute flex space-x-8 text-gray-200 opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a href="/"
+                    ><i class="fa-solid fa-play hover:text-rose-600"></i
+                  ></a>
+                  <a href="/"
+                    ><i class="fa-solid fa-arrow-right hover:text-rose-600"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!--Image 6-->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-2/1 lg:basis-1/3">
+              <!--img-->
+              <img
+                src="./images/mv6.jpg"
+                class="group-hover:scale-110 group-hover:opacity-50 duration-500"
+              />
+              <!--Image Detail Container-->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gray-200 group-hover:text-yellow-400 group-hover:mb-2 duration-500"
+                >
+                  Oblivion
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gray-200"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Animi, quae?
+                </p>
+                <!--Icons Container-->
+                <div
+                  class="absolute flex space-x-8 text-gray-200 opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a href="/"
+                    ><i class="fa-solid fa-play hover:text-rose-600"></i
+                  ></a>
+                  <a href="/"
+                    ><i class="fa-solid fa-arrow-right hover:text-rose-600"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Right Content-->
+        <div class="basis-1/3 pl-10 lg:pl-0">
+          <!--Title-->
+          <h2 class="text-gray-200 mb-8">Hot News</h2>
+          <!--News Container-->
+          <div class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4">
+            <!--Item 1-->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!--News Image Container-->
+              <div class="basis-1/3 h-full">
+                <img src="./images/new1.jpg" class="h-full w-full object-cover">
+              </div>
+              <!--Item Detail-->
+              <div class="pl-8 basis-2/3 text-gray-200 group-hover:text-yellow-400 group-hover:cursor-pointer duration-500">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt.</p>
+                <p CLASS="text-xd tracking-tighter mt-2 font-bold font-gemunu">ON jUL 08 2024</p>
+              </div>
+            </div>
+            <!--Item 2-->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!--News Image Container-->
+              <div class="basis-1/3 h-full">
+                <img src="./images/new2.jpg" class="h-full w-full object-cover">
+              </div>
+              <!--Item Detail-->
+              <div class="pl-8 basis-2/3 text-gray-200 group-hover:text-yellow-400 group-hover:cursor-pointer duration-500">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt.</p>
+                <p CLASS="text-xd tracking-tighter mt-2 font-bold font-gemunu">ON jUL 08 2024</p>
+              </div>
+            </div>
+            <!--Item 3-->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!--News Image Container-->
+              <div class="basis-1/3 h-full">
+                <img src="./images/new3.jpg" class="h-full w-full object-cover">
+              </div>
+              <!--Item Detail-->
+              <div class="pl-8 basis-2/3 text-gray-200 group-hover:text-yellow-400 group-hover:cursor-pointer duration-500">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt.</p>
+                <p CLASS="text-xd tracking-tighter mt-2 font-bold font-gemunu">ON jUL 08 2024</p>
+              </div>
+            </div>
+            <!--Item 4-->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!--News Image Container-->
+              <div class="basis-1/3 h-full">
+                <img src="./images/new4.jpg" class="h-full w-full object-cover">
+              </div>
+              <!--Item Detail-->
+              <div class="pl-8 basis-2/3 text-gray-200 group-hover:text-yellow-400 group-hover:cursor-pointer duration-500">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt.</p>
+                <p CLASS="text-xd tracking-tighter mt-2 font-bold font-gemunu">ON jUL 08 2024</p>
+              </div>
+            </div>
+            <!--Item 5-->
+            <div class="flex items-center group basis-3/4 md:basis-1/2">
+              <!--News Image Container-->
+              <div class="basis-1/3 h-full">
+                <img src="./images/new5.jpg" class="h-full w-full object-cover">
+              </div>
+              <!--Item Detail-->
+              <div class="pl-8 basis-2/3 text-gray-200 group-hover:text-yellow-400 group-hover:cursor-pointer duration-500">
+                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt.</p>
+                <p CLASS="text-xd tracking-tighter mt-2 font-bold font-gemunu">ON jUL 08 2024</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
