@@ -13,7 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         gemunu: ["Gemunu Libre", "sans-serif"],
-        openSans: ["Open Sans", "sans-serif"],
+        open: ["Open Sans", "sans-serif"],
       },
 
       spacing: {
